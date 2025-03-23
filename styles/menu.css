@@ -1,0 +1,60 @@
+:root {
+    --color-text: #262117;
+    --color-background: #F7F5F3;
+    --color-accent: #FFB833;
+    --color-accent-dark: #FFA500;
+    --color-secondary: #3A2C2D;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+h1, h5 {
+    font-family: 'Rakkas', cursive;
+    color: var(--color-secondary);
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.price {
+    font-weight: bold;
+    color: var(--color-accent-dark);
+}
+
+.wishlist-btn {
+    color: var(--color-secondary);
+    border-color: var(--color-secondary);
+}
+
+.wishlist-btn:hover {
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+
+.add-to-cart-btn {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+.add-to-cart-btn:hover {
+    background-color: var(--color-accent-dark);
+    border-color: var(--color-accent-dark);
+}

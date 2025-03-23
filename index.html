@@ -1,153 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hagoga</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles/index.css">
-</head>
-<body>
-    <!-- Top Bar with Location and Social Icons -->
-    <div class="top-bar">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-10 col-sm-9 col-8">
-                    <div class="location">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Al-Madfaiyah Park, Rocket Garden Street, Sheraton entrance from Suez Road, in front of Parking 4 and a half, Masakin.</span>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hagoga</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="styles/index.css">
+    </head>
+    <body>
+        <!-- Top Bar with Location and Social Icons -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-10 col-sm-9 col-8">
+                        <div class="location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Al-Madfaiyah Park, Rocket Garden Street, Sheraton entrance from Suez Road, in front of Parking 4 and a half, Masakin.</span>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-2 col-sm-3 col-4 text-end">
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    <div class="col-md-2 col-sm-3 col-4 text-end">
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <!-- Main Navigation -->
+        <header class="main-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 text-start">
+                        <div class="auth-buttons d-flex justify-content-md-start justify-content-start mb-md-0 mb-2">
+                            <a href="login.html" class="btn home-login-btn rounded">Login</a>
+                            <a href="register.html" class="btn home-register-btn rounded">Register</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 text-center position-relative d-none d-md-block">
+                        <ul class="nav-links">
+                            <li><a href="index.html" class="active">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="wishlist.html">Wishlist</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 text-end d-flex justify-content-end align-items-center">
+                        <div class="cart-container">
+                            <a href="checkout.html" class="cart-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="cart-count"></span>
+                            </a>
+                        </div>
+                        <button class="mobile-menu-toggle d-md-none">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu Overlay -->
+            <div class="mobile-menu-overlay">
+                <div class="mobile-menu-container">
+                    <div class="mobile-menu-header">
+                        <img src="assets/images/unnamed.png" alt="Restaurant Logo" class="mobile-logo">
+                        <button class="mobile-menu-close">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <ul class="mobile-menu-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="wishlist.html">Wishlist</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Logo -->
+            <div class="logo-container">
+                <img src="assets/images/unnamed.png" alt="Restaurant Logo" class="logo-img">
+            </div>
+        </header>
 
-    <!-- Main Navigation -->
-    <div class="main-nav">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-3 col-sm-12 text-start">
-                  <div class="auth-buttons d-flex justify-content-md-start justify-content-center mb-md-0 mb-2">
-                      <button class="btn home-login-btn">Login</button>
-                      <button class="btn home-register-btn">Register</button>
-                  </div>
-              </div>
-              <div class="col-md-6 col-sm-12 text-center position-relative">
-                  <ul class="nav-links">
-                      <li><a href="index.html" class="active">Home</a></li>
-                      <li><a href="about.html">About</a></li>
-                      <li><a href="menu.html">Menu</a></li>
-                      <li><a href="wishlist.html">Wishlist</a></li>
-                      <li><a href="#contact">Contact</a></li>
-                  </ul>
-              </div>
-              <div class="col-md-3 col-sm-12 text-end">
-                  <div class="d-flex justify-content-center mt-md-0 mt-2 utils-container">
-                      <div class="cart-container">
-                          <a href="checkout.html" class="cart-icon">
-                              <i class="fas fa-shopping-cart"></i>
-                              <span class="cart-count">0</span>
-                          </a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-        
-        <!-- Logo positioned absolutely -->
-        <div class="logo-container">
-            <img src="assets/images/unnamed.png" alt="Restaurant Logo" class="logo-img">
+            <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="hero-content">
+                            <h1 class="hero-title">Experience Authentic Middle Eastern Cuisine</h1>
+                            <p class="hero-subtitle">Savor the rich flavors of traditional dishes with our modern twist</p>
+                            <div class="hero-buttons">
+                                <a href="menu.html" class="btn primary-btn">View Our Menu</a>
+                                <a href="#order-steps" class="btn secondary-btn">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="hero-image">
+                            <img src="assets/images/Top-Traditional-Egyptian-Food-Drinks.jpg" alt="Delicious Middle Eastern Food" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Steps to Order Section -->
+        <section id="order-steps" class="order-steps-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>How to Order</h2>
+                    <p>Follow these simple steps to enjoy our delicious food</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="step-card">
+                            <div class="step-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <div class="step-number">1</div>
+                            <h3>Choose Your Meal</h3>
+                            <p>Browse our menu and select your favorite dishes</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="step-card">
+                            <div class="step-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="step-number">2</div>
+                            <h3>Add to Cart</h3>
+                            <p>Add items to your cart and review your order</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="step-card">
+                            <div class="step-icon">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <div class="step-number">3</div>
+                            <h3>Checkout</h3>
+                            <p>Provide delivery details and complete payment</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="step-card">
+                            <div class="step-icon">
+                                <i class="fas fa-motorcycle"></i>
+                            </div>
+                            <div class="step-number">4</div>
+                            <h3>Enjoy Your Food</h3>
+                            <p>Relax as we prepare and deliver your food</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contact Us</h2>
+                    <p>Get in touch with us for any questions or reservations</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="info">
+                                    <h4>Our Location</h4>
+                                    <p>Al-Madfaiyah Park, Rocket Garden Street, Sheraton entrance from Suez Road, in front of Parking 4 and a half, Masakin.</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="info">
+                                    <h4>Call Us</h4>
+                                    <p>(012) 8005 5200</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="info">
+                                    <h4>Opening Hours</h4>
+                                    <p>Daily: 11:00 AM - 11:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="info">
+                                    <h4>Email Us</h4>
+                                    <p>admin@Hagoga.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contact-form">
+                            <form id="contact-form">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Your Name" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Your Email" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Subject">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button type="submit" class="btn primary-btn">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Logo and About -->
+                <div class="col-lg-3 col-md-6 footer-column">
+                    <div class="text-center text-md-start">
+                        <img src="assets/images/unnamed.png" alt="Restaurant Logo" class="footer-logo">
+                        <div class="footer-about">
+                            Our restaurant offers an authentic culinary experience with traditional recipes and a modern twist. Join us for an unforgettable dining experience.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-3 col-md-6 footer-column">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-angle-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+                        <li><a href="menu.html"><i class="fas fa-angle-right"></i> Menu</a></li>
+                        <li><a href="#contact"><i class="fas fa-angle-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-lg-3 col-md-6 footer-column">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <div class="contact-info">
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i> Al-Madfaiyah Park, Rocket Garden Street, Sheraton entrance from Suez Road, in front of Parking 4 and a half, Masakin.
+                        </p>
+                        <p>
+                            <i class="fas fa-phone"></i> (012) 8005 5200
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope"></i> admin@Hagoga.com
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-lg-3 col-md-6 footer-column">
+                    <h4 class="footer-heading">Newsletter</h4>
+                    <p>Subscribe to our newsletter for updates, special offers and promotions.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <footer class="footer">
-      <div class="container">
-          <div class="row">
-              <!-- Logo and About -->
-              <div class="col-lg-3 col-md-6 footer-column">
-                  <div class="text-center text-md-start">
-                      <img src="assets/images/unnamed.png" alt="Restaurant Logo" class="footer-logo">
-                      <div class="footer-about">
-                          Our restaurant offers an authentic culinary experience with traditional recipes and a modern twist. Join us for an unforgettable dining experience.
-                      </div>
-                  </div>
-              </div>
+        <!-- Copyright Section -->
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p>&copy; 2025 Hagoga. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <p>Designed with <i class="fas fa-heart" style="color: var(--color-accent);"></i> by Hagoga</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-              <!-- Quick Links -->
-              <div class="col-lg-3 col-md-6 footer-column">
-                  <h4 class="footer-heading">Quick Links</h4>
-                  <ul class="footer-links">
-                      <li><a href="#"><i class="fas fa-angle-right"></i> Home</a></li>
-                      <li><a href="#"><i class="fas fa-angle-right"></i> About Us</a></li>
-                      <li><a href="#"><i class="fas fa-angle-right"></i> Menu</a></li>
-                      <li><a href="#"><i class="fas fa-angle-right"></i> Contact</a></li>
-                  </ul>
-              </div>
+        <!-- Back to Top Button -->
+        <a href="#" class="back-to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </footer>
 
-              <!-- Contact Information -->
-              <div class="col-lg-3 col-md-6 footer-column">
-                  <h4 class="footer-heading">Contact Us</h4>
-                  <div class="contact-info">
-                      <p>
-                          <i class="fas fa-map-marker-alt"></i> Al-Madfaiyah Park, Rocket Garden Street, Sheraton entrance from Suez Road, in front of Parking 4 and a half, Masakin.
-                      </p>
-                      <p>
-                          <i class="fas fa-phone"></i> (012) 8005 5200
-                      </p>
-                      <p>
-                          <i class="fas fa-envelope"></i> admin@Hagoga.com
-                      </p>
-                  </div>
-              </div>
-
-              <!-- Newsletter -->
-              <div class="col-lg-3 col-md-6 footer-column">
-                  <h4 class="footer-heading">Newsletter</h4>
-                  <p>Subscribe to our newsletter for updates, special offers and promotions.</p>
-                  <div class="newsletter-form">
-                      <input type="email" placeholder="Your Email">
-                      <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                  </div>
-                  <div class="social-links">
-                      <a href="#"><i class="fab fa-facebook-f"></i></a>
-                      <a href="#"><i class="fab fa-instagram"></i></a>
-                      <a href="#"><i class="fab fa-twitter"></i></a>
-                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                  </div>
-              </div>
-          </div>
-      </div>
-
-      <!-- Copyright Section -->
-      <div class="copyright">
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-6 text-center text-md-start">
-                      <p>&copy; 2025 Hagoga. All Rights Reserved.</p>
-                  </div>
-                  <div class="col-md-6 text-center text-md-end">
-                      <p>Designed with <i class="fas fa-heart" style="color: var(--color-accent);"></i> by Hagoga</p>
-                  </div>
-              </div>
-          </div>
-      </div>
-
-      <!-- Back to Top Button -->
-      <a href="#" class="back-to-top">
-          <i class="fas fa-chevron-up"></i>
-      </a>
-  </footer>
-
-    <!-- Bootstrap JS Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="javascript/auth-controller.js"></script>
+        <script src="javascript/cart-utilities.js"></script>
+        <script src="javascript/nav.js"></script>
+        <script src="javascript/contact.js"></script>
+    </body>
 </html>
